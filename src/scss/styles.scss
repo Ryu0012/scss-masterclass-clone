@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Alumni+Sans+Pinstripe&display=swap");
 @import "_titles.scss";
 
 * {
@@ -90,10 +90,111 @@ nav {
     color: black;
     @extend %miniTitle;
     font-size: 10px;
-    transition: 0.3s linear, background 0.3s linear;
-    &:hover {
-      background-color: black;
-      color: white;
+    @extend %titleTransition;
+  }
+}
+
+.nail-component {
+  .wrapper {
+    transition: opacity 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+    width: 100%;
+    height: 80vh;
+    background-color: antiquewhite;
+    margin-bottom: 50px;
+    display: flex;
+    .nail-component__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 80px;
+      text-transform: lowercase;
+      text-align: center;
+      h4 {
+        @extend %miniTitleContent;
+        @extend %miniTitle;
+        padding-top: 20px;
+      }
+      h3 {
+        @extend %mainContent;
+      }
+      a {
+        border: 2px solid black;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        @extend %miniTitle;
+        @extend %titleTransition;
+      }
+    }
+
+    & img {
+      width: 50%;
+      object-fit: cover;
+      height: inherit;
+    }
+  }
+}
+
+.nail-shop {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+  h3 {
+    text-align: center;
+    @extend %miniTitleContent;
+  }
+  h4 {
+    @extend %mainContent;
+  }
+  .nail-shop__items {
+    .nail-item {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 40px;
+      .img {
+        // toDo
+        height: 50%;
+        width: 100%;
+        background-color: black;
+        background-size: cover;
+        margin-bottom: 60px;
+        transition: 0.3s linear, all 0.3s linear;
+        &:hover {
+          background-color: orange;
+        }
+      }
+      h3 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-size: 10px;
+      }
+      h4 {
+        font-size: 46px;
+        margin: 0;
+      }
+      span {
+        margin: 15px 0;
+        font-size: 12px;
+      }
+      a {
+        border: 1px solid black;
+        padding: 20px 80px;
+        text-decoration: none;
+        color: black;
+        @extend %miniTitle;
+        @extend %titleTransition;
+      }
     }
   }
 }

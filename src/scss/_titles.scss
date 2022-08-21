@@ -5,3 +5,25 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
+%miniTitleContent {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 30px;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+%mainContent {
+  font-size: 45px;
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+%titleTransition {
+  transition: 0.3s linear, background 0.3s linear;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
