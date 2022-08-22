@@ -5,7 +5,7 @@
 ## To Clone:
 
 - [x] (영화 웹) https://besthorrorscenes.com
-- [ ] (쇼핑몰) https://paint-box.com
+- [x] (쇼핑몰) https://paint-box.com
 - [ ] (포트폴리오) http://10x19.co/
 - [ ] (포트폴리오. 프랑스) http://www.z-o-o.fr/
 - [ ] (쇼핑+포트폴리오. 호주) https://schwartzmedia.com.au
