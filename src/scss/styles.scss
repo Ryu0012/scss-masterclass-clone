@@ -1,6 +1,13 @@
+@import "_variables.scss";
+@import "_elements.scss";
+
+a {
+  @extend %btn;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
 body {
-  background: whitesmoke;
-  a {
-    color: blue;
-  }
+  height: 100vh;
+  margin: 16vh;
 }
